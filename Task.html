@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="General.css">
+    <title>Task</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #b0d9c4;
+        }
+        .container {
+            max-width: 600px;
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        input, button {
+            padding: 10px;
+            font-size: 16px;
+            margin: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidenav">
+        <a href="python.html">О Python</a>
+        <a href="sintaksis.html">Синтаксис</a>
+        <a href="practice.html">Практика по написанию простых программ</a>
+        <a href="cycles.html">Циклы "for" и "while"</a>
+        <a href="Oge.html">Задачи из ОГЭ по информатике</a>
+        <a href="Otpravka.html">Обратная связь</a>
+        <a href="ID.html">Разворот паспорта</a>
+        <a href="DOM.html">Dom</a>
+        <a href="Task.html" class = 'active'>Задача JS</a>
+        <a href="Index.html">На главную</a>
+      </div>
+<h1>Решение алгоритмической задачи</h1>
+<p>1017. Дано вещественное число A. Вычислить x = a**4, при a < 10; x = a при a > 61, в противном случае x  = a - sin(a**2)</p>
+<div class="container">
+    <h2>Решение алгоритмической задачи</h2>
+    <p>Введите число A:</p>
+    <input type="number" id="inputA" placeholder="Введите число" step="any">
+    <button onclick="calculateResult()">Рассчитать</button>
+
+    <div class="result" id="resultOutput"></div>
+    <script src="script.js"></script>
+</div>
+</body>
+</html>

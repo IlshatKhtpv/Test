@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700,900&subset=cyrillic");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i&subset=cyrillic');
+@media screen and (min-width: 1440px) and (max-width: 1599px){     }
+@keyframes header_anim {
+  from {
+    transform: translateX(-120%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+.header {
+  display: flex;
+  min-height: 100vh;
+  padding: 8px 50px;
+  background-color: #02f;
+  background-image: url("iStock-802775028.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.header__title {
+  margin-left: 250px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+  transform: translateX(0);
+  animation-name: header_anim;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  text-transform: uppercase;
+  color: #fff;
+  align-self: center;
+}
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 280px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+}
+/* The navigation menu links */
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+.sidenav a.active { color: #f1f1f1;; font-weight: bold; }
+/* Style page content */
+.main {
+    margin-left: 280px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+} 
+.article {
+    position: relative;
+    min-height: 100vh;
+    padding: 8px 50px;
+  }
+  .article_whitebg::before,
+  .article_bluebg::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content:'';
+  }
+  
+  .article_whitebg::before {
+    background: rgba(255, 255, 255, 0.5);
+  }
+  
+  .article_bluebg::before {
+    background: #B0E0E6;
+  }
+  
+  .article_first,
+  .article_second {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  .form {
+    position: relative;
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .form_input,
+  .form_textarea {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 8px 16px;
+    transition: transform 0.3s ease-out;
+    color: #02f;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    background-color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+    font-weight: 300;
+  }
+  
+  .form_input::-webkit-input-placeholder,
+  .form_textarea::-webkit-input-placeholder {
+    opacity: 0.6;
+    color: #02f;
+  }
+  
+  .form_input:focus,
+  .form_textarea:focus {
+    transition: transform 0.3s ease-out;
+    transform: scale(1.02, 1.02);
+  }
+  
+  .form_textarea {
+    resize: none;
+  }
+  
+  .form_button {
+    display: inline-block;
+    padding: 12px 32px;
+    transition: all 0.3s ease-out;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    background-color: #02f;
+    background-clip: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+  }
+  
+  .form_button:hover {
+    transition: all 0.3s ease-out;
+    transform: scale(1.02, 1.02);
+    box-shadow: rgba(255, 255, 255, 0.3) 0 0 16px 2px;
+  }
+  
+  .black {
+    color: #000;
+  }
+  
+  .white {
+    color: #fff;
+  }
+
+  
